@@ -24,7 +24,7 @@ abstract class QuizDatabase : RoomDatabase() {
     companion object {
         private var INSTANCE : QuizDatabase? = null
 
-        // 싱글턴 패턴
+        // 싱글턴 패턴 ( 객체를 하나만 만든다 ) 반드시 공부
         fun getInstance(context: Context) : QuizDatabase {
             if(INSTANCE == null) {
                 INSTANCE = Room.databaseBuilder(
