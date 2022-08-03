@@ -114,6 +114,12 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.frame, QuizListFragment())
                         .commit()
                 }
+                R.id.quiz_make -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.frame, QuizCreateFragment())
+                        .commit()
+                }
             }
 
             drawerLayout.closeDrawers() // 메뉴 누른 후 자동으로 닫힘~
